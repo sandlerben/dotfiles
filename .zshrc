@@ -142,4 +142,6 @@ if [ -f '/Users/Ben/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Us
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/Ben/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/Ben/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# config for dotfiles
 alias config='/usr/bin/git --git-dir=/Users/Ben/.cfg/ --work-tree=/Users/Ben'

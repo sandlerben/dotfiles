@@ -1,0 +1,11 @@
+{
+    "window.zoomLevel": 0,
+    "[python]": {
+        "editor.rulers": [
+            79,
+            120
+        ]
+    },
+    "window.newWindowDimensions": "maximized",
+    "files.trimTrailingWhitespace": true
+}

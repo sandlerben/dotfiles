@@ -1,0 +1,36 @@
+[user]
+	name = Ben Sandler
+	email = ben1sandler@gmail.com
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[diff]
+	tool = diffmerge
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	trustExitCode = true
+	cmd = /usr/bin/diffmerge --merge --result=\"$MERGED\"\n        \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[credential]
+	helper = osxkeychain
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[pack]
+	windowMemory = 32m
+[core]
+	editor = /usr/bin/vim
+[push]
+	default = current
+[rerere]
+	enabled = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[diff "pandoc"]
+    textconv=pandoc --to=markdown
+    prompt = false
+[alias]
+    wdiff = diff --word-diff=color --unified=1
+
